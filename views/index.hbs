@@ -1,0 +1,49 @@
+<style>
+    .rounded{
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+</style>
+
+
+<div class="container">
+        <div class="row">
+            <div class="container-fluid ">
+                <div class="">
+                    <div class="rounded d-flex justify-content-center">
+                        <div class="col-md-6 col-sm-12 p-5 ">
+                            <div class="text-center">
+                                <h3 class="text-primary">Sign In</h3>
+                            </div>
+                            <form action="/home" method="POST">
+                                <div class="p-4">
+                                    <div class="input-group mb-3">
+                                        <input type="name" class="form-control"    style="width:250px ;" placeholder="Email" name="email" >
+                                    </div>
+                                    {{#if error1}}
+                                    <p style="color: red;">{{error1}}</p>
+                                    {{/if}}
+                                    <div class="input-group mb-3">
+                                        <input type="password"  class="form-control"  style="width:250px ;"  placeholder="password" name="password">
+                                    </div>
+                                    {{#if error2}}
+                                    <p style="color: red;">{{error2}}</p>
+                                    {{/if}}
+                                    <div class="button text-center">
+                                        <button class="btn btn-primary text-center  mt-2 " style="width:250px ;"   type="submit">
+                                        Login
+                                    </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
